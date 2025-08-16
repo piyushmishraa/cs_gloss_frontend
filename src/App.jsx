@@ -59,7 +59,7 @@ function App() {
       ))}
     </div>
        <a 
-  href="https://github.com/your-username/cs-resources-data" 
+  href="https://github.com/piyushmishraa/cs_gloss" 
   target="_blank" 
   rel="noopener noreferrer" 
   className="contribute-btn"
