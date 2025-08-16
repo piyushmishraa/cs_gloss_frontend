@@ -1,0 +1,146 @@
+/* Global reset */
+body {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #0d0d0d; /* black background */
+  color: #00ff88; /* default neon green text */
+  line-height: 1.6;
+}
+
+/* Title styling */
+.title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 20px 0;
+  color: #f4e409; /* yellow headline */
+  text-shadow: 0 0 12px #f4e409, 0 0 20px #00ff88;
+}
+
+/* Input & button styles */
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 2px solid #00ff88;
+  border-radius: 5px;
+  background: black;
+  color: #f4e409; /* yellow text inside input */
+  outline: none;
+  font-family: inherit;
+}
+
+input[type="text"]::placeholder {
+  color: #33cc99;
+}
+
+button {
+  padding: 10px 15px;
+  background: black;
+  border: 2px solid #f4e409; /* yellow border */
+  color: #f4e409;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+button:hover {
+  background: #f4e409;
+  color: black;
+  border-color: #00ff88;
+}
+
+/* Card container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+/* Card styling */
+.card {
+  flex: 1 1 250px;
+  max-width: 300px;
+  border: 1px solid #00ff88;
+  border-radius: 10px;
+  padding: 16px;
+  background: #111;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 0 25px rgba(244, 228, 9, 0.8); /* glowing yellow */
+  border: 1px solid #f4e409; /* border turns yellow */
+}
+
+/* Card text */
+.card h2 {
+  color: #00ff88;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: #f4e409; /* category in yellow */
+  font-size: 0.9rem;
+}
+
+/* Links */
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00ff88;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #00ff88;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.card a:hover {
+  background: #00ff88;
+  color: black;
+  border-color: #f4e409;
+}
+
+.contribute-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 2rem auto;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #24292e, #333);
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.contribute-btn:hover {
+  background: linear-gradient(135deg, #000, #444);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.contribute-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
