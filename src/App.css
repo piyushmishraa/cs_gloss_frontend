@@ -113,27 +113,32 @@ button:hover {
   color: black;
   border-color: #f4e409;
 }
-
 .contribute-btn {
+  position: fixed;
+  bottom: 0; /* Stick to very bottom */
+  left: 0;
+  right: 0; /* This makes it span full width */
+  width: 100%; /* Full screen width */
+  z-index: 1000;
+  
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin: 2rem auto;
+  margin: 0;
   padding: 12px 24px;
   font-size: 1rem;
   font-weight: 600;
   color: #fff;
   background: linear-gradient(135deg, #24292e, #333);
   border: none;
-  border-radius: 8px;
+  border-radius: 0; /* Remove border radius for full width look */
   text-decoration: none;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
-
 .contribute-btn:hover {
   background: linear-gradient(135deg, #000, #444);
   transform: translateY(-2px);
@@ -144,3 +149,5 @@ button:hover {
   transform: translateY(0);
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
 }
+
+
