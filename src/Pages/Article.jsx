@@ -8,6 +8,7 @@ const apiKey = import.meta.env.VITE_NEWS_API_KEY;
 const Article = () => {
    const[articles,setArticles]=useState([]);
    useEffect(()=>{
+    console.log("API key in prod:", apiKey);
     const articledata=axios.get(`https://newsapi.org/v2/everything?q=computer+science+OR+programming+OR+AI+OR+machine+learning&sortBy=publishedAt&language=en&pageSize=10&apiKey=${apiKey}`);
     articledata.then((response)=>{
         console.log(response.data.articles);
