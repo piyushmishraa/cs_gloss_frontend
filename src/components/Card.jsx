@@ -1,9 +1,10 @@
-const Card = ({ title, category, url }) => {
+const Card = (props) => {
+
   return (
     <div className="card">
-      <h2>{title}</h2>
-      <p>{category}</p>
-      <a href={url} target="_blank" rel="noopener noreferrer">
+      <h2>{props.title}</h2>
+      <p>{props.category}</p>
+      <a href={props.url} target="_blank" rel="noopener noreferrer">
         Visit
       </a>
     </div>

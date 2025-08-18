@@ -1,0 +1,15 @@
+.article-page {
+  padding: 20px;
+}
+
+.article-heading {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.article-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
