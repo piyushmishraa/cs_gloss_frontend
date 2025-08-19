@@ -1,15 +1,16 @@
 import React from 'react'
-import "./ArticalCard.css"   
+import "./ArticalCard.css"  
+import techpic from "../Pages/tech.jpg" 
 
 const ArticalCard = ({ title, imageurl, url }) => {
   return (
     <div className="card">
       {/* Left side: image (optional) */}
-      {imageurl && (
+      
         <div className="card-image-wrapper">
-          <img src={imageurl} alt={title} className="card-image"/>
+          <img src={imageurl?imageurl:techpic} alt={title} className="card-image"/>
         </div>
-      )}
+     
 
       {/* Right side: content */}
       <div className="card-content">

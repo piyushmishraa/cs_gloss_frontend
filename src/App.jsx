@@ -13,6 +13,8 @@ function App() {
         <div className="nav-logo">Learn Link</div>
         <div className="nav-links">
           <Link to="/">Home</Link>
+          <Link to="/articles">Articles</Link>
+
           
         </div>
       </nav>
